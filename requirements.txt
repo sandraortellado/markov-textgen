@@ -13,5 +13,3 @@ six==1.12.0
 SQLAlchemy==1.2.15
 Werkzeug==0.14.1
 gunicorn==19.9.0
-os==3.6
-sys==3.7

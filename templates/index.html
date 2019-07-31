@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>If Trump was an Environmentalist?</title>
+        <meta name="description" content="">
+        
+        <!-- The compiled CSS file -->
+		<link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+		<link href="{{index_css}}" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+		<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+		<script src="{{profile}}"></script>	 
+        <link rel="stylesheet" href="{{production_css}}">
+        <link rel="stylesheet" href="{{gradient_css}}">
+
+        <!-- Web fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+
+        <!-- favicon.ico. Place these in the root directory. -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+    </head>
+
+    <body>
+
+
+    <!-- Create outer border -->
+    <div class="page-border">
+    <div class="bg--white">
+
+        <!-- Header -->
+        <header class="align--center pt3 pb2">
+            <div class="container">
+                <h1 class="mb3">If Trump was an Environmentalist?</h1>
+                <div>
+                <img src="{{merged}}" alt="trump tweets">
+                </div>
+                <br/>
+                <p class="mb3">Ever wondered what Trump would sound like if he spoke for the trees, lived a life in the woods like Walden, and campaigned to educate people about the Inconvenient Truth of global warming? This web app was created with you and many others in mind.</p>
+                <h3 class="mb1"> Click on the button below to generate a tweet that fulfills your wildest dreams.</h3>
+                <br/>
+                <form action="/tweet" method="post">
+                <button type="submit" href="/tweet" class="g-btn g-btn--aqua-to-green radius-lg has-border">Generate text!</button>
+                </form>
+            </div>
+            <br/>
+        </header>
+            		<div>
+			<div class="wallcontainer">
+				<div class="profilecard">
+					<div class="profilecardhead"></div>
+					<div class="profilecardimagediv">
+						<img src="{{donniedrawing}}">
+					</div>
+
+					<div class="profilecardnameidcont">
+						<div class="profilecardnamecont">
+							<span id="profilecardname"></span>
+						</div>
+						<span id="profilecarduid"></span>
+					</div>
+
+					<div class="profilecardstatsdiv">
+						<ul class="profilecardstatslist">
+							<li class="profilecardstatslistitem">
+								<span class="dispblk">
+									<span class="statslistitemhead">Tweets</span>
+									<span id="statslistitemcount" class="statslistitemcount">0</span>
+								</span>
+							</li>
+
+							<li class="profilecardstatslistitem">
+								<span class="dispblk">
+									<span class="statslistitemhead">Following</span>
+									<span class="statslistitemcount">35</span>
+								</span>
+							</li>
+
+							<li class="profilecardstatslistitem">
+								<span class="dispblk">
+									<span class="statslistitemhead">Followers</span>
+									<span class="statslistitemcount">34</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="rightcontainer">
+					<div class="posttweetcontainer">
+						<img class="posttweetprofimg" src="{{donniedrawing}}">
+						<div class="ml56px">
+							<div class="posttweettacontainer">
+								<textarea id="posttweetta" class="posttweetta" placeholder="What's happening?"></textarea>
+								<div class="posttweetcountcont">
+									<span class="posttweetcount"><span id="totalchars">0</span>/250</span>
+								</div>
+							</div>
+							<div class="posttweetbutcont">
+								<button id="posttweetbut" class="posttweetbut">Tweet</button>
+							</div>
+						</div>
+					</div>
+					<div>
+						<ul id="tweetscontainer" class="tweetscontainer">
+                        </ul>
+                    </div>
+                </div>
+                        </div>
+        <!-- Body -->
+        <main>
+            <div class="container">
+
+                <!-- Info -->
+                <section class="pt2 pb3">                    
+                    <h3>How it works</h3>
+                    <hr/>
+                    <Br/>
+                        <div style='position:relative; padding-bottom:calc(57.50%)'><iframe src='https://gfycat.com/ifr/OldfashionedHeavenlyCoypu' frameborder='0' scrolling='no' width='75%' height='95%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p> <a href="https://gfycat.com/oldfashionedheavenlycoypu">via Gfycat</a>
+                    <br/>
+                        <p>This web app uses a Markov chain to generate text. A Markov chain essentially consists of a set of transitions, which are determined by some probability distribution, that satisfy the Markov property: given a sequence, the next token in the sequence relies only on the current token and not on previous token. This means that given a string of words comprising a text, the next word in the sequence can be calculated only using a smaller set window of previous words to determine the next word.</p>
+                    <p><a href="http://setosa.io/ev/markov-chains/">More on Markov chains.</a></p>
+                     
+                </section>
+            </div>
+        </main>
+            <p class="mt1 small text--gray">Design by <a href="https://www.eatapapaya.com" class="link">Papaya</a>.</p>
+
+    </div>
+    </div>
+        </div>
+    </body>
+</html>
+
